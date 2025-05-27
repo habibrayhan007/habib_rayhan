@@ -47,16 +47,16 @@ const AppShowcase = () => {
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <img src="/images/planability.jpg" alt="Ryde App Interface" />
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                On-Demand Plan Management Software called Planability built for
+                Credability Systems
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                An app built with React Native, firebase, google analytics, MMKV
+                & Mobx for a fast, user-friendly experience.
               </p>
             </div>
           </div>
@@ -64,19 +64,24 @@ const AppShowcase = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
-                <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
-                />
+                <img src="/images/cri.png" alt="Library Management Platform" />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>Carbon Reduction Institute (CRI)</h2>
+              <p className="text-white-50 md:text-xl">
+                An app built with React, Typescript, TailwindCSS, Zustand &
+                React Hook Form for a fast, user-friendly experience.
+              </p>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img src="/images/fifaWc.png" alt="YC Directory App" />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>A blog Template for Football</h2>
+              <p className="text-white-50 md:text-xl">
+                A template built with just HTML & CSS for a simple, responsive
+                design.
+              </p>
             </div>
           </div>
         </div>

@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
-                Shapping
+                Crafting
                 <span className="slide">
                   <span className="wrapper">
                     {words.map((word) => (
@@ -41,11 +41,11 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h1>into real world</h1>
-              <h1>that deliver Results</h1>
+              <h1>into Outcomes</h1>
+              <h1>that Matter.</h1>
             </div>
             <p className="text-white-50 md:text-xl relative z-10 pointer-event-none">
-              Hi, I'm Habib, a developer based in Bangladesh with a passion for code.
+              Hi, I'm Habib, a React & React Native developer based in Bangladesh with a passion for code.
             </p>
             <Button
               className="md:w-80 md:h-16 w-60 h-12"
@@ -58,7 +58,7 @@ const Hero = () => {
         {/* Right: 3D Model */}
         <figure>
           <div className="hero-3d-layout">
-            <HeroExperience />
+            {/* <HeroExperience /> */}
           </div>
         </figure>
       </div>
