@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { words } from '../constants';
 import Button from '../components/Button';
-import HeroExperience from '../components/HeroModels/HeroExperience';
+import HeroExperience from '../components/models/heroModels/HeroExperience';
 import AnimatedCounter from '../components/AnimatedCounter';
 
 const Hero = () => {
@@ -58,7 +58,7 @@ const Hero = () => {
         {/* Right: 3D Model */}
         <figure>
           <div className="hero-3d-layout">
-            {/* <HeroExperience /> */}
+            <HeroExperience />
           </div>
         </figure>
       </div>
