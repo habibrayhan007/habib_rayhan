@@ -246,20 +246,29 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
+    name: "github",
+    imgPath: "/images/github3.png",
+    link: "https://github.com/habibrayhan007"
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
+    link: "https://www.facebook.com/habibrayhan.07"
   },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
+  // {
+  //   name: "insta",
+  //   imgPath: "/images/insta.png",
+  //   link: ""
+  // },
+  // {
+  //   name: "x",
+  //   imgPath: "/images/x.png",
+  //   link: ""
+  // },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "https://www.linkedin.com/in/habibrayhan007/"
   },
 ];
 

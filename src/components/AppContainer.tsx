@@ -6,6 +6,9 @@ import LogoShowCase from '../sections/LogoSection';
 import FeatureCards from '../sections/FeatureCards';
 import Experience from '../sections/ExperienceSection';
 import TechStack from '../sections/TechStack';
+import TestimonialsSection from '../sections/TestimonialsSection';
+import ContactSection from '../sections/ContactSection';
+import Footer from '../sections/Footer';
 
 const AppContainer = () => {
   return (
@@ -17,6 +20,9 @@ const AppContainer = () => {
       <FeatureCards />
       <Experience />
       <TechStack />
+      <TestimonialsSection />
+      <ContactSection />
+      <Footer />
     </div>
   )
 }
