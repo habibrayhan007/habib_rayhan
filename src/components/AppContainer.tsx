@@ -9,6 +9,7 @@ import TechStack from '../sections/TechStack';
 import TestimonialsSection from '../sections/TestimonialsSection';
 import ContactSection from '../sections/ContactSection';
 import Footer from '../sections/Footer';
+import BlogSection from '../sections/BlogSection';
 
 const AppContainer = () => {
   return (
@@ -21,6 +22,7 @@ const AppContainer = () => {
       <Experience />
       <TechStack />
       <TestimonialsSection />
+      <BlogSection />
       <ContactSection />
       <Footer />
     </div>

@@ -15,6 +15,10 @@ const navLinks = [
     name: "Testimonials",
     link: "#testimonials",
   },
+  {
+    name: "Blogs",
+    link: "#blogs",
+  },
 ];
 
 const words = [
@@ -301,6 +305,73 @@ const socialImgs = [
   },
 ];
 
+const blogs = [
+  {
+    id: 1,
+    title: "How I Improved Frontend Performance",
+    summary: "A deep dive into optimizing React apps for speed and scalability.",
+    imgPath: "/images/project3.png",
+    date: "2025-07-10",
+    link: "/blog/performance",
+  },
+  {
+    id: 2,
+    title: "Design Systems for Developers",
+    summary: "Building reusable UI components and design systems in modern web projects.",
+    imgPath: "/images/planability.jpg",
+    date: "2025-06-22",
+    link: "/blog/design-systems",
+  },
+  {
+    id: 3,
+    title: "Effective Communication in Remote Teams",
+    summary: "Tips and tools for staying connected and productive while working remotely.",
+    imgPath: "/images/project3.png",
+    date: "2025-05-30",
+    link: "/blog/communication",
+  },
+  {
+    id: 4,
+    title: "Effective Communication in Remote Teams",
+    summary: "Tips and tools for staying connected and productive while working remotely.",
+    imgPath: "/images/project3.png",
+    date: "2025-05-30",
+    link: "/blog/communication",
+  },
+  {
+    id: 5,
+    title: "Effective Communication in Remote Teams",
+    summary: "Tips and tools for staying connected and productive while working remotely.",
+    imgPath: "/images/project3.png",
+    date: "2025-05-30",
+    link: "/blog/communication",
+  },
+  {
+    id: 6,
+    title: "Effective Communication in Remote Teams",
+    summary: "Tips and tools for staying connected and productive while working remotely.",
+    imgPath: "/images/project3.png",
+    date: "2025-05-30",
+    link: "/blog/communication",
+  },
+  {
+    id: 7,
+    title: "Effective Communication in Remote Teams",
+    summary: "Tips and tools for staying connected and productive while working remotely.",
+    imgPath: "/images/project3.png",
+    date: "2025-05-30",
+    link: "/blog/communication",
+  },
+  {
+    id: 8,
+    title: "Effective Communication in Remote Teams",
+    summary: "Tips and tools for staying connected and productive while working remotely.",
+    imgPath: "/images/project3.png",
+    date: "2025-05-30",
+    link: "/blog/communication",
+  },
+];
+
 export {
   words,
   abilities,
@@ -313,4 +384,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  blogs,
 };
