@@ -43,7 +43,7 @@ const TechStack = () => {
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="How I Can Contribute & My Key Skills"
-          sub="🤝 What I Bring to the Table"
+          subTitle="🤝 What I Bring to the Table"
         />
         <div className="tech-grid">
           {/* {techStackIcons.map((techStackIcon) => (

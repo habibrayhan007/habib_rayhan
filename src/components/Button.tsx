@@ -1,6 +1,12 @@
 import React from "react";
+import { TypeButton } from "./types";
 
-const Button = ({ text, className, id }) => {
+const Button = ({
+  title,
+  className,
+  id
+}: TypeButton) => {
+
   return (
     <a
       onClick={(e) => {
@@ -22,7 +28,7 @@ const Button = ({ text, className, id }) => {
     >
       <div className="cta-button group">
         <div className="bg-circle" />
-        <p className="text">{text}</p>
+        <p className="text">{title}</p>
         <div className="arrow-wrapper">
           <img src="/images/arrow-down.svg" alt="arrow" />
         </div>

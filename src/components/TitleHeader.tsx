@@ -1,8 +1,10 @@
-const TitleHeader = ({ title, sub }) => {
+import { TypeTitleHeader } from "./types";
+
+const TitleHeader = ({ title, subTitle }: TypeTitleHeader) => {
   return (
     <div className="flex flex-col items-center gap-5">
       <div className="hero-badge">
-        <p>{sub}</p>
+        <p>{subTitle}</p>
       </div>
       <div>
         <h1 className="font-semibold md:text-5xl text-3xl text-center">

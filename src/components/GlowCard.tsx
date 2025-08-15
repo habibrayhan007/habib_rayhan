@@ -1,6 +1,7 @@
 import { useRef } from "react";
+import { TypeGlowCard } from "./types";
 
-const GlowCard = ({ card, index, children }) => {
+const GlowCard = ({ review, index, children }: TypeGlowCard) => {
   // refs for all the cards
   const cardRefs = useRef<HTMLDivElement[]>([]);
 
@@ -39,7 +40,7 @@ const GlowCard = ({ card, index, children }) => {
         ))}
       </div>
       <div className="mb-5">
-        <p className="text-white-50 text-lg">{card.review}</p>
+        <p className="text-white-50 text-lg">{review}</p>
       </div>
       {children}
     </div>

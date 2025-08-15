@@ -50,7 +50,7 @@ const Hero = () => {
             <Button
               className="md:w-80 md:h-16 w-60 h-12"
               id="button"
-              text="See My Work"
+              title="See My Work"
             />
           </div>
         </header>
