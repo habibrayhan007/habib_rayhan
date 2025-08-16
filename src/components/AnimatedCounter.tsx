@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AnimatedCounter = () => {
   const counterRef = useRef(null);
-  const countersRef = useRef([]);
+  const countersRef = useRef<HTMLDivElement[]>([]);
 
   useGSAP(() => {
     countersRef.current.forEach((counter, index) => {
@@ -32,7 +32,9 @@ const AnimatedCounter = () => {
         },
         // Add the suffix after counting is complete
         onComplete: () => {
-          numberElement.textContent = `${item.value}${item.suffix}`;
+          if (numberElement) {
+            numberElement.textContent = `${item.value}${item.suffix}`;
+          }
         },
       });
     }, counterRef);

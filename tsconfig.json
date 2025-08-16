@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // or at least "ES2017"
+    "lib": ["DOM", "ES2015"], // add ES2015 or newer (ES2017/ES2020)
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "types": ["vite/client"]
+  },
+  "include": ["src", "vite-env.d.ts"]
+}

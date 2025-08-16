@@ -11,7 +11,7 @@ export type TypeTitleHeader = {
 
 export type TypeGlowCard = {
   review: string;
-  index: number;
+  index?: number;
   children: React.ReactNode;
 };
 

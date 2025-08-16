@@ -9,7 +9,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<AppContainer />} />
-        <Route path="/blog/:slug" element={<BlogDetails />} />
+        <Route path="/blog/:slug" element={<BlogDetails id={0} index={0} title={""} summary={""} description={""} imgPath={""} date={""} link={""} />} />
         <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
     </Router>

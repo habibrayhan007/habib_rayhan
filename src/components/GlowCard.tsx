@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { TypeGlowCard } from "./types";
 
 const GlowCard = ({ review, index, children }: TypeGlowCard) => {
@@ -6,8 +6,9 @@ const GlowCard = ({ review, index, children }: TypeGlowCard) => {
   const cardRefs = useRef<HTMLDivElement[]>([]);
 
   // when mouse moves over a card, rotate the glow effect
-  const handleMouseMove = (index) => (e) => {
+  const handleMouseMove = (index: string | number | undefined) => (e: { clientX: number; clientY: number; }) => {
     // get the current card
+    if (typeof index !== "number") return;
     const card = cardRefs.current[index];
     if (!card) return;
 
@@ -29,7 +30,7 @@ const GlowCard = ({ review, index, children }: TypeGlowCard) => {
   // return the card component with the mouse move event
   return (
     <div
-      ref={(el) => { if (el) cardRefs.current[index] = el; }}
+      ref={(el) => { if (el && typeof index === "number") cardRefs.current[index] = el; }}
       onMouseMove={handleMouseMove(index)}
       className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column"
     >

@@ -1,3 +1,4 @@
+import React from "react";
 import { socialImgs } from "../constants";
 
 const Footer = () => {

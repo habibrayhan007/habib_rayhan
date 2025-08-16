@@ -1,3 +1,4 @@
+import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -15,7 +16,7 @@ const Experience = () => {
     gsap.utils.toArray(".timeline-card").forEach((card) => {
       // Animate the card coming in from the left
       // and fade in
-      gsap.from(card, {
+      gsap.from(card as Element, {
         // Move the card in from the left
         xPercent: -100,
         // Make the card invisible at the start
@@ -29,7 +30,7 @@ const Experience = () => {
         // Trigger the animation when the card is 80% of the way down the screen
         scrollTrigger: {
           // The card is the trigger element
-          trigger: card,
+          trigger: card as Element,
           // Trigger the animation when the card is 80% down the screen
           start: "top 80%",
         },
@@ -68,7 +69,7 @@ const Experience = () => {
       // Animate the text opacity from 0 to 1
       // and move it from the left to its final position
       // over 1 second with a power2 ease-in-out curve
-      gsap.from(text, {
+      gsap.from(text as Element, {
         // Set the opacity of the text to 0
         opacity: 0,
         // Move the text from the left to its final position
@@ -81,7 +82,7 @@ const Experience = () => {
         // Trigger the animation when the text is 60% down the screen
         scrollTrigger: {
           // The text is the trigger element
-          trigger: text,
+          trigger: text as Element,
           // Trigger the animation when the text is 60% down the screen
           start: "top 60%",
         },

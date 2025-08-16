@@ -1,9 +1,9 @@
+import React from "react";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { Computer } from "./Computer";
 
-import Computer from "./Computer";
-
-const ContactExperience = () => {
+export const ContactExperience: React.FC = () => {
   return (
     <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>
       <ambientLight intensity={0.5} color="#fff4e6" />
@@ -40,5 +40,3 @@ const ContactExperience = () => {
     </Canvas>
   );
 };
-
-export default ContactExperience;
