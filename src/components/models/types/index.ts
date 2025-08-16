@@ -9,9 +9,9 @@ export type TypeModelProps = {
 
 export type ParticlesProps = {
   count?: number;
-}
+};
 
 export type Particle = {
   position: [number, number, number];
   speed: number;
-}
+};
